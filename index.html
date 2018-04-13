@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta http-equiv="Access-Control-Allow-Origin" content="*">
+	  <title>Near UTD</title>
+	  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	  <meta charset="utf-8">
+	  <link rel="stylesheet" type="text/css" href="css/styles.css">
+	  <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> !-->
+	</head>
+	<body>
+		<div id="list">
+			<input type="text" data-bind="event :{ keyup : filterList }" id="myInput"  placeholder = "Search location ">
+			<ul id="myUL" data-bind="foreach: itemList">
+				<li data-bind="text: title(), click: $parent.clickListItem"></li>
+			</ul>
+		</div>
+		<div id="map"></div>
+		<script src="js/constants.js"></script>
+		<script src="js/lib/knockout-3.4.2.js"></script>
+		<script src="js/lib/jquery-3.3.1.min.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html> 
